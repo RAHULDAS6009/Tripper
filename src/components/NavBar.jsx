@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <div>
       {/* Navigation Button */}
-      <div className="  flex max-w-screen-md justify-between  mx-auto  bg-white   rounded-2xl w-full drop-shadow-2xl/3">
+      <div className="  flex max-w-screen-md justify-between  mx-auto  bg-white   rounded-3xl w-full drop-shadow-2xl/3">
         {navigateText.map((nav, index) => (
           <Button key={index} label={nav} />
         ))}
@@ -16,7 +16,7 @@ const NavBar = () => {
 
 function Button({ label }) {
   return (
-    <div className="hover:bg-black cursor-pointer w-32 h-10  flex justify-center items-center rounded-3xl  text-gray-400 text-sm px-5  font-medium">
+    <div className="hover:bg-black hover:transition hover:delay-150 hover:duration-100  cursor-pointer w-32 h-10  flex justify-center items-center rounded-3xl  text-gray-400 text-sm px-5  font-medium">
       {label}
     </div>
   );
